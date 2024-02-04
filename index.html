@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <div class="wrapper__btn">
+          <button><img class="btn__settings" src="./img/settingggs.png" alt="" /></button>
+          <div class="amount__usres">участников:<span class="amount__users-num"></span></div>
+          <button class="btn__exit"><span class="btn__exit-span" href="#">Выйти</span></button>
+        </div>
+
+        <div class="modal">
+          <div class="modal__box">
+            <div class="modal__box-wrapper">
+              <h2 class="modal__box-setting">Настройки</h2>
+              <button class="modal__box-btn">
+                <img class="modal__box-img" src="./img/pngwing.com.png" alt="выход" />
+              </button>
+            </div>
+            <h2 class="modal__box-title">Имя в чате</h2>
+
+            <div class="form__wrapper-modal">
+              <form class="form__modal">
+                <input class="form__modal-input" type="text" placeholder="сообщение" />
+                <div class="form__modal-btn">
+                  <button class="form__modal-btn-inner">-></button>
+                </div>
+              </form>
+            </div>
+            <div class="modal__box-theme">
+              <button class="modal__box-theme-btn">тема aqua</button>
+              <button class="modal__box-theme-close">ванилька</button>
+            </div>
+          </div>
+        </div>
+
+        <dialog class="modal__authorization">
+          <div class="modal__authorization-wrapper">
+            <h2 class="modal__authorization-title">Авторизация</h2>
+
+            <div class="modal__authorization-form-wrapper">
+              <span class="modal__authorization-form-span">Почта:</span>
+              <form class="modal__authorization-form-inner">
+                <input class="modal__authorization-input" type="email" placeholder="введите почту" />
+                <div class="modal__authorization-wrapper-btn">
+                  <button class="modal__authorization__get">Получить код</button>
+                  <button type="button" class="modal__authorization__enter">Ввести код</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
+        <dialog class="modal__confirmation">
+          <div class="modal__confirmation-wrapper">
+            <h2 class="modal__confirmation-title">Подтверждение</h2>
+            <div class="modal__confirmation-form-wrapper">
+              <span class="modal__confirmation-form-span">Код:</span>
+              <form class="modal__confirmation-form-inner">
+                <input class="modal__confirmation-input" type="text" placeholder="введите почту" />
+                <div class="modal__confirmation-wrapper-btn">
+                  <button class="modal__confirmation__get">Войти</button>
+                  <button type="button" class="modal__confirmation__close">назад</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
+        <div class="message">
+          <ul class="message__list">
+            <template id="element-li">
+              <li class="message__area">
+                <div class="message__send-from">
+                  <div class="message__inner">
+                    <span class="message__user"></span>
+                    <span class="message__text"></span>
+                    <span class="message__time">18:45</span>
+                  </div>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </div>
+
+        <div class="form__wrapper">
+          <form class="form">
+            <input class="form__input" type="text" placeholder="сообщение" />
+            <div class="form__btn">
+              <button class="form__btn-inner">-></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="box__users">
+          <div class="box__users-wrapper-btn">
+            <button type="button" class="box__users-btn">участники:Ники</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/ui/change-theme .js"></script>
+    <script type="module" src="./js/sending-message/sending-message.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
